@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "title": "Understanding JavaScript Closures",
+    "excerpt": "A deep dive into one of JavaScript's most powerful concepts - closures.",
+    "content": "Closures are functions that remember their lexical environment even when they are executed outside of it. This allows for powerful patterns in JavaScript, such as data encapsulation and module creation...",
+    "date": "2023-11-01"
+  },
+  {
+    "id": 2,
+    "title": "Mastering CSS Grid Layout",
+    "excerpt": "Learn how to create complex layouts with CSS Grid.",
+    "content": "CSS Grid Layout is a two-dimensional layout system that allows developers to create complex responsive layouts with ease. With properties like 'grid-template-columns' and 'grid-template-rows', you can define grid tracks and sizes...",
+    "date": "2023-11-02"
+  },
+  {
+    "id": 3,
+    "title": "An Introduction to Next.js",
+    "excerpt": "A guide to get started with Next.js for React developers.",
+    "content": "Next.js is a powerful React framework that enables developers to build static and server-rendered applications with ease. It provides features like SSR, SSG, and API routes out of the box...",
+    "date": "2023-11-03"
+  },
+  {
+    "id": 4,
+    "title": "10 Tips for Writing Clean Code",
+    "excerpt": "A practical guide to keeping your codebase clean and maintainable.",
+    "content": "Writing clean code is crucial for maintaining a large codebase over time. This includes following best practices like naming conventions, avoiding deep nesting, and using modular functions...",
+    "date": "2023-11-04"
+  },
+  {
+    "id": 5,
+    "title": "React vs Vue: A Comparison",
+    "excerpt": "An in-depth look at the similarities and differences between React and Vue.",
+    "content": "React and Vue are two of the most popular front-end JavaScript frameworks. While React focuses on being a UI library, Vue offers a more opinionated approach. Both have their strengths and use cases...",
+    "date": "2023-11-05"
+  },
+  {
+    "id": 6,
+    "title": "Building a REST API with Node.js",
+    "excerpt": "Learn how to create a simple REST API using Express in Node.js.",
+    "content": "REST APIs are a fundamental part of modern web development. Using Node.js and Express, you can easily set up routes, handle HTTP requests, and build a robust API for your application...",
+    "date": "2023-11-06"
+  },
+  {
+    "id": 7,
+    "title": "Getting Started with TypeScript",
+    "excerpt": "A beginner's guide to adding type safety to JavaScript with TypeScript.",
+    "content": "TypeScript is a superset of JavaScript that adds optional static typing, which can help prevent errors and improve developer productivity. By defining types for variables, functions, and components...",
+    "date": "2023-11-07"
+  },
+  {
+    "id": 8,
+    "title": "Improving Website Performance",
+    "excerpt": "Best practices for optimizing load times and user experience.",
+    "content": "Website performance plays a crucial role in user experience and SEO. By implementing techniques such as lazy loading, code splitting, and optimizing images, you can significantly reduce load times...",
+    "date": "2023-11-08"
+  },
+  {
+    "id": 9,
+    "title": "Introduction to Machine Learning",
+    "excerpt": "An overview of the basics of machine learning and its applications.",
+    "content": "Machine learning is a field of artificial intelligence that enables computers to learn from data. It has applications in numerous areas including predictive analytics, image recognition, and natural language processing...",
+    "date": "2023-11-09"
+  },
+  {
+    "id": 10,
+    "title": "A Guide to Responsive Web Design",
+    "excerpt": "Learn how to make your web applications look great on all devices.",
+    "content": "Responsive web design ensures that your website adapts seamlessly to different screen sizes. Using CSS techniques like media queries, flexible grids, and responsive images...",
+    "date": "2023-11-10"
+  }
+]
