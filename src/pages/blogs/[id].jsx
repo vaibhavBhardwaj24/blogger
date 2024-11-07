@@ -1,8 +1,11 @@
 import { useRouter } from "next/router";
 import React from "react";
+import fs from "fs";
+import path from "path";
 export const getStaticProps = async ({ params }) => {
-  const res = await fetch("http://localhost:3000/data.json");
-  const data = await res.json();
+  const filePath = path.join(process.cwd(), "./src/pages/data.json"); // Adjust this path if needed
+  const rawData = fs.readFileSync(filePath, "utf8");
+  const data = JSON.parse(rawData);
   const specific = data.find((item) => item.id.toString() === params.id);
   if (specific) {
     return {
@@ -15,8 +18,9 @@ export const getStaticProps = async ({ params }) => {
   }
 };
 export const getStaticPaths = async () => {
-  const res = await fetch("http://localhost:3000/data.json");
-  const data = await res.json();
+  const filePath = path.join(process.cwd(), "./src/pages/data.json");
+  const rawData = fs.readFileSync(filePath, "utf8");
+  const data = JSON.parse(rawData);
   const paths = data.map((item) => ({
     params: {
       id: item.id.toString(),

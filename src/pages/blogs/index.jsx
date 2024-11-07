@@ -1,10 +1,11 @@
-"use client";
 import { useRouter } from "next/router";
 import React from "react";
-
+import fs from "fs";
+import path from "path";
 export const getStaticProps = async () => {
-  const res = await fetch("http://localhost:3000/data.json");
-  const data = await res.json();
+  const filePath = path.join(process.cwd(), "./src/pages/data.json");
+  const rawData = fs.readFileSync(filePath, "utf8");
+  const data = JSON.parse(rawData);
   return {
     props: {
       data,
@@ -15,7 +16,7 @@ const Blog = ({ data }) => {
   const router = useRouter();
   return (
     <div className="p-4">
-      <h1 className="text-6xl text-white underline p-4"> Latest Blog</h1>
+      <h1 className="text-6xl text-white underline p-4"> Latest Blog✨</h1>
       <ul className="grid grid-cols-2 md:grid-cols-4 gap-4">
         {data.map((post) => (
           <li
